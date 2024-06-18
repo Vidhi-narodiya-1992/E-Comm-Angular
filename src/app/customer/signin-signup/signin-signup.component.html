@@ -1,0 +1,129 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h3>Sign Up Form</h3>
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" formControlName="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Mobile Number</label>
+                        <input type="tel" class="form-control" formControlName="mobNumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Enter your age</label>
+                        <input type="number" class="form-control" formControlName="age">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Enter your DOB</label>
+                        <input type="date" class="form-control" formControlName="dob">                        
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>        
+                            <input type="email" class="form-control" placeholder="abc@gmail.com" formControlName="email">
+                        </div>                    
+                        <div class="form-group col-md-6">
+                            <label for="password">Password</label>        
+                            <input type="password" class="form-control" placeholder="password" formControlName="password">
+                        </div>                    
+                    </div>                    
+                    <div class="form-group">                        
+                        <label for="Address">Address</label>        
+                        <input type="text" class="form-control" placeholder="12,4 street" formControlName="addLine1">                        
+                    </div>
+                    <div class="form-group">                        
+                        <label for="Address2">Address 2</label>        
+                        <input type="text" class="form-control" placeholder="appartment, floor" formControlName="addLine2">                        
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" placeholder="City" formControlName="city">
+                        </div>                    
+                        <div class="form-group col-md-4">
+                            <label for="state">State</label>
+                            <select id="inputState" class="form-control" formControlName="state">
+                                <option selected>Choose...</option>
+                                <option selected>...</option>
+                            </select>
+                        </div>                    
+                        <div class="form-group col-md-2">
+                            <label for="zip">Zip Code</label>
+                                <input type="text" class="form-control" placeholder="City" formnovalidate="zipCode">
+                        </div>                                        
+                    </div>
+                    <div class="form-group">
+                        <label for="Language">Language</label>
+                        <select multiple class="form-control" formControlName="Language">
+                            <option>Hindi</option>
+                            <option>English</option>
+                            <option>Telgu</option>
+                            <option>Odiya</option>
+                            <option>Bhojpuri</option>
+                            <option>Others</option>
+                        </select>      
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-inline" formControlName="gender" value="Male">
+                            <label for="male" class="form-check-inline">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-inline" formControlName="gender" value="Female">
+                            <label for="Female" class="form-check-inline">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-inline" formControlName="gender" value="Others">
+                            <label for="others" class="form-check-inline">Others</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="SomthingAboutYou">Somthing About you</label>
+                            <textarea class="form-control" rows="3" formControlName="aboutYou"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="uploadPhoto">Upload Your Photo</label>
+                            <input type="file" class="form-control" formControlName="uploadPhoto">
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" class="form-check-inline" formControlName="agreetc">
+                            <label for="agreetc" class="form-check-inline">Terms and Conditions</label>                            
+                        </div>
+                        <div class="form-group">
+                            <label for="role">what Do You Want?</label>
+                            <select class="form-control" formControlName="role">
+                                <option value="seller">Seller</option>
+                                <option value="buyer">Buyer</option>
+                            </select>                            
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary">Register</button>
+                        </div>
+                    </div>
+                </form>     
+                <!--Login Form here-->                                               
+                <p class="sim-pointer" routerLink="/sign-in">Already have and account click here to login</p>              
+            </div>   
+            <div class="col-md-6 offset-md-3">
+                <h3>Login</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="userEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="userPassword">
+                    </div>
+                    <div class="form-group">                        
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+                <p routerlink="sign-up" class="sim-pointer">Don't have an account click here for register</p>
+            </div>                      
+        </div>  
+    </div>
+</div>

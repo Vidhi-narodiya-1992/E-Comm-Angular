@@ -1,0 +1,67 @@
+{
+    "user": [
+        {
+            "name": "Vidhi Javiya",
+            "mobNumber": "1245784556",
+            "age": 33, 
+            "dob": "1992-12-29",
+            "email": "vidhi@gmail.com",
+            "password": "123456",
+            "address":{
+                "address1": "District Center",
+                "address2": "South Bopal",
+                "city": "Ahemdabad",
+                "state": "Gujarat",
+                "zipCode": "112525"
+            },
+            "language":[
+                "English",
+                "Hindi",
+                "Gujarati"
+            ],
+            "gender":"Female",
+            "aboutYou": "I am a programmer...",
+            "uploadPhoto": "vidhi.png",
+            "agreetc": true,    
+            "role":"admin",
+            "id": 1
+        }
+    ],
+    "products":[
+        {
+            "id": 1,
+            "name": "Polyester Door Curtain",
+            "uploadPhoto": "abc.png",
+            "productDesc": "abc",
+            "mrp": "1000",
+            "dp": "499",
+            "status": "publish"
+        }
+    ],
+    "orders":[
+       {
+            "id": 1,
+            "userId": 3,
+            "sellerId": 2,
+            "product":{
+                "id": 1,
+                "name": "Polyester Door Curtain",
+                "uploadPhoto": "abc.png",
+                "productDesc": "abc",
+                "mrp": "1000",
+                "dp": "499",
+                "status": "publish"
+            },
+            "deliverAddress": {
+                "id": 0,
+                "address1": "abc",
+                "address2": "pqr",
+                "city": "Banglore",
+                "state": "Choose...",
+                "zipCode": 456562
+            },
+            "contact": "7895623456",
+            "datetime": "18/05/2024"
+       } 
+    ]
+}

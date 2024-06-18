@@ -26,7 +26,8 @@
                 "input": "public"
               }
             ],
-            "styles": [
+            "styles": [              
+              "node_modules/ngx-toastr/toastr.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -97,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f01481ec-6f7c-431b-8f3a-520d93afe225"
   }
 }
