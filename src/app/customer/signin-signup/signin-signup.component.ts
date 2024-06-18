@@ -28,7 +28,7 @@ export class SigninSignupComponent {
     if(this.href == '/sign-in'){
       this.regForm = true
     }else if(this.href) == 'sign-in'{
-      this.regForm
+      this.regForm = false
     }
   }
 }
